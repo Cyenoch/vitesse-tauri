@@ -343,10 +343,8 @@ import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly Observable: UnwrapRef<typeof import('rxjs')['Observable']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
-    readonly catchError: UnwrapRef<typeof import('rxjs')['catchError']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly computedAsync: UnwrapRef<typeof import('@vueuse/core')['computedAsync']>
     readonly computedEager: UnwrapRef<typeof import('@vueuse/core')['computedEager']>
@@ -364,28 +362,16 @@ declare module 'vue' {
     readonly createTemplatePromise: UnwrapRef<typeof import('@vueuse/core')['createTemplatePromise']>
     readonly createUnrefFn: UnwrapRef<typeof import('@vueuse/core')['createUnrefFn']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
-    readonly debounce: UnwrapRef<typeof import('rxjs')['debounce']>
-    readonly debounceTime: UnwrapRef<typeof import('rxjs')['debounceTime']>
     readonly debouncedRef: UnwrapRef<typeof import('@vueuse/core')['debouncedRef']>
     readonly debouncedWatch: UnwrapRef<typeof import('@vueuse/core')['debouncedWatch']>
     readonly defineAsyncComponent: UnwrapRef<typeof import('vue')['defineAsyncComponent']>
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>
     readonly defineLoader: UnwrapRef<typeof import('vue-router/auto')['defineLoader']>
     readonly definePage: UnwrapRef<typeof import('unplugin-vue-router/runtime')['_definePage']>
-    readonly delay: UnwrapRef<typeof import('rxjs')['delay']>
     readonly destr: UnwrapRef<typeof import('destr')['destr']>
-    readonly distinct: UnwrapRef<typeof import('rxjs')['distinct']>
-    readonly distinctUntilChanged: UnwrapRef<typeof import('rxjs')['distinctUntilChanged']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
-    readonly every: UnwrapRef<typeof import('rxjs')['every']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
-    readonly filter: UnwrapRef<typeof import('rxjs')['filter']>
-    readonly find: UnwrapRef<typeof import('rxjs')['find']>
-    readonly first: UnwrapRef<typeof import('rxjs')['first']>
-    readonly forkJoin: UnwrapRef<typeof import('rxjs')['forkJoin']>
-    readonly from: UnwrapRef<typeof import('rxjs')['from']>
-    readonly fromEvent: UnwrapRef<typeof import('@vueuse/rxjs')['fromEvent']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
@@ -399,14 +385,9 @@ declare module 'vue' {
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
-    readonly lastValueFrom: UnwrapRef<typeof import('rxjs')['lastValueFrom']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
-    readonly map: UnwrapRef<typeof import('rxjs')['map']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
-    readonly merge: UnwrapRef<typeof import('rxjs')['merge']>
-    readonly mergeMap: UnwrapRef<typeof import('rxjs')['mergeMap']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
-    readonly of: UnwrapRef<typeof import('rxjs')['of']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
     readonly onBeforeRouteLeave: UnwrapRef<typeof import('vue-router/auto')['onBeforeRouteLeave']>
@@ -446,28 +427,15 @@ declare module 'vue' {
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
     readonly resolveRef: UnwrapRef<typeof import('@vueuse/core')['resolveRef']>
     readonly resolveUnref: UnwrapRef<typeof import('@vueuse/core')['resolveUnref']>
-    readonly retry: UnwrapRef<typeof import('rxjs')['retry']>
-    readonly retryWhen: UnwrapRef<typeof import('rxjs')['retryWhen']>
     readonly safeDestr: UnwrapRef<typeof import('destr')['safeDestr']>
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
-    readonly skip: UnwrapRef<typeof import('rxjs')['skip']>
-    readonly skipUntil: UnwrapRef<typeof import('rxjs')['skipUntil']>
-    readonly switchMap: UnwrapRef<typeof import('rxjs')['switchMap']>
     readonly syncRef: UnwrapRef<typeof import('@vueuse/core')['syncRef']>
     readonly syncRefs: UnwrapRef<typeof import('@vueuse/core')['syncRefs']>
-    readonly take: UnwrapRef<typeof import('rxjs')['take']>
-    readonly takeUntil: UnwrapRef<typeof import('rxjs')['takeUntil']>
-    readonly tap: UnwrapRef<typeof import('rxjs')['tap']>
     readonly templateRef: UnwrapRef<typeof import('@vueuse/core')['templateRef']>
-    readonly throttle: UnwrapRef<typeof import('rxjs')['throttle']>
-    readonly throttleTime: UnwrapRef<typeof import('rxjs')['throttleTime']>
     readonly throttledRef: UnwrapRef<typeof import('@vueuse/core')['throttledRef']>
     readonly throttledWatch: UnwrapRef<typeof import('@vueuse/core')['throttledWatch']>
-    readonly throwError: UnwrapRef<typeof import('rxjs')['throwError']>
-    readonly timeout: UnwrapRef<typeof import('rxjs')['timeout']>
-    readonly toObserver: UnwrapRef<typeof import('@vueuse/rxjs')['toObserver']>
     readonly toRaw: UnwrapRef<typeof import('vue')['toRaw']>
     readonly toReactive: UnwrapRef<typeof import('@vueuse/core')['toReactive']>
     readonly toRef: UnwrapRef<typeof import('vue')['toRef']>
@@ -577,7 +545,6 @@ declare module 'vue' {
     readonly useNetwork: UnwrapRef<typeof import('@vueuse/core')['useNetwork']>
     readonly useNow: UnwrapRef<typeof import('@vueuse/core')['useNow']>
     readonly useObjectUrl: UnwrapRef<typeof import('@vueuse/core')['useObjectUrl']>
-    readonly useObservable: UnwrapRef<typeof import('@vueuse/rxjs')['useObservable']>
     readonly useOffsetPagination: UnwrapRef<typeof import('@vueuse/core')['useOffsetPagination']>
     readonly useOnline: UnwrapRef<typeof import('@vueuse/core')['useOnline']>
     readonly usePageLeave: UnwrapRef<typeof import('@vueuse/core')['usePageLeave']>
@@ -615,8 +582,6 @@ declare module 'vue' {
     readonly useStorage: UnwrapRef<typeof import('@vueuse/core')['useStorage']>
     readonly useStorageAsync: UnwrapRef<typeof import('@vueuse/core')['useStorageAsync']>
     readonly useStyleTag: UnwrapRef<typeof import('@vueuse/core')['useStyleTag']>
-    readonly useSubject: UnwrapRef<typeof import('@vueuse/rxjs')['useSubject']>
-    readonly useSubscription: UnwrapRef<typeof import('@vueuse/rxjs')['useSubscription']>
     readonly useSupported: UnwrapRef<typeof import('@vueuse/core')['useSupported']>
     readonly useSwipe: UnwrapRef<typeof import('@vueuse/core')['useSwipe']>
     readonly useTemplateRefsList: UnwrapRef<typeof import('@vueuse/core')['useTemplateRefsList']>
@@ -656,7 +621,6 @@ declare module 'vue' {
     readonly watchDebounced: UnwrapRef<typeof import('@vueuse/core')['watchDebounced']>
     readonly watchDeep: UnwrapRef<typeof import('@vueuse/core')['watchDeep']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
-    readonly watchExtractedObservable: UnwrapRef<typeof import('@vueuse/rxjs')['watchExtractedObservable']>
     readonly watchIgnorable: UnwrapRef<typeof import('@vueuse/core')['watchIgnorable']>
     readonly watchImmediate: UnwrapRef<typeof import('@vueuse/core')['watchImmediate']>
     readonly watchOnce: UnwrapRef<typeof import('@vueuse/core')['watchOnce']>
@@ -667,16 +631,13 @@ declare module 'vue' {
     readonly watchTriggerable: UnwrapRef<typeof import('@vueuse/core')['watchTriggerable']>
     readonly watchWithFilter: UnwrapRef<typeof import('@vueuse/core')['watchWithFilter']>
     readonly whenever: UnwrapRef<typeof import('@vueuse/core')['whenever']>
-    readonly zip: UnwrapRef<typeof import('rxjs')['zip']>
   }
 }
 declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly Observable: UnwrapRef<typeof import('rxjs')['Observable']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
-    readonly catchError: UnwrapRef<typeof import('rxjs')['catchError']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly computedAsync: UnwrapRef<typeof import('@vueuse/core')['computedAsync']>
     readonly computedEager: UnwrapRef<typeof import('@vueuse/core')['computedEager']>
@@ -694,28 +655,16 @@ declare module '@vue/runtime-core' {
     readonly createTemplatePromise: UnwrapRef<typeof import('@vueuse/core')['createTemplatePromise']>
     readonly createUnrefFn: UnwrapRef<typeof import('@vueuse/core')['createUnrefFn']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
-    readonly debounce: UnwrapRef<typeof import('rxjs')['debounce']>
-    readonly debounceTime: UnwrapRef<typeof import('rxjs')['debounceTime']>
     readonly debouncedRef: UnwrapRef<typeof import('@vueuse/core')['debouncedRef']>
     readonly debouncedWatch: UnwrapRef<typeof import('@vueuse/core')['debouncedWatch']>
     readonly defineAsyncComponent: UnwrapRef<typeof import('vue')['defineAsyncComponent']>
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>
     readonly defineLoader: UnwrapRef<typeof import('vue-router/auto')['defineLoader']>
     readonly definePage: UnwrapRef<typeof import('unplugin-vue-router/runtime')['_definePage']>
-    readonly delay: UnwrapRef<typeof import('rxjs')['delay']>
     readonly destr: UnwrapRef<typeof import('destr')['destr']>
-    readonly distinct: UnwrapRef<typeof import('rxjs')['distinct']>
-    readonly distinctUntilChanged: UnwrapRef<typeof import('rxjs')['distinctUntilChanged']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
-    readonly every: UnwrapRef<typeof import('rxjs')['every']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
-    readonly filter: UnwrapRef<typeof import('rxjs')['filter']>
-    readonly find: UnwrapRef<typeof import('rxjs')['find']>
-    readonly first: UnwrapRef<typeof import('rxjs')['first']>
-    readonly forkJoin: UnwrapRef<typeof import('rxjs')['forkJoin']>
-    readonly from: UnwrapRef<typeof import('rxjs')['from']>
-    readonly fromEvent: UnwrapRef<typeof import('@vueuse/rxjs')['fromEvent']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
@@ -729,14 +678,9 @@ declare module '@vue/runtime-core' {
     readonly isReactive: UnwrapRef<typeof import('vue')['isReactive']>
     readonly isReadonly: UnwrapRef<typeof import('vue')['isReadonly']>
     readonly isRef: UnwrapRef<typeof import('vue')['isRef']>
-    readonly lastValueFrom: UnwrapRef<typeof import('rxjs')['lastValueFrom']>
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
-    readonly map: UnwrapRef<typeof import('rxjs')['map']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
-    readonly merge: UnwrapRef<typeof import('rxjs')['merge']>
-    readonly mergeMap: UnwrapRef<typeof import('rxjs')['mergeMap']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
-    readonly of: UnwrapRef<typeof import('rxjs')['of']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
     readonly onBeforeRouteLeave: UnwrapRef<typeof import('vue-router/auto')['onBeforeRouteLeave']>
@@ -776,28 +720,15 @@ declare module '@vue/runtime-core' {
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
     readonly resolveRef: UnwrapRef<typeof import('@vueuse/core')['resolveRef']>
     readonly resolveUnref: UnwrapRef<typeof import('@vueuse/core')['resolveUnref']>
-    readonly retry: UnwrapRef<typeof import('rxjs')['retry']>
-    readonly retryWhen: UnwrapRef<typeof import('rxjs')['retryWhen']>
     readonly safeDestr: UnwrapRef<typeof import('destr')['safeDestr']>
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>
     readonly shallowRef: UnwrapRef<typeof import('vue')['shallowRef']>
-    readonly skip: UnwrapRef<typeof import('rxjs')['skip']>
-    readonly skipUntil: UnwrapRef<typeof import('rxjs')['skipUntil']>
-    readonly switchMap: UnwrapRef<typeof import('rxjs')['switchMap']>
     readonly syncRef: UnwrapRef<typeof import('@vueuse/core')['syncRef']>
     readonly syncRefs: UnwrapRef<typeof import('@vueuse/core')['syncRefs']>
-    readonly take: UnwrapRef<typeof import('rxjs')['take']>
-    readonly takeUntil: UnwrapRef<typeof import('rxjs')['takeUntil']>
-    readonly tap: UnwrapRef<typeof import('rxjs')['tap']>
     readonly templateRef: UnwrapRef<typeof import('@vueuse/core')['templateRef']>
-    readonly throttle: UnwrapRef<typeof import('rxjs')['throttle']>
-    readonly throttleTime: UnwrapRef<typeof import('rxjs')['throttleTime']>
     readonly throttledRef: UnwrapRef<typeof import('@vueuse/core')['throttledRef']>
     readonly throttledWatch: UnwrapRef<typeof import('@vueuse/core')['throttledWatch']>
-    readonly throwError: UnwrapRef<typeof import('rxjs')['throwError']>
-    readonly timeout: UnwrapRef<typeof import('rxjs')['timeout']>
-    readonly toObserver: UnwrapRef<typeof import('@vueuse/rxjs')['toObserver']>
     readonly toRaw: UnwrapRef<typeof import('vue')['toRaw']>
     readonly toReactive: UnwrapRef<typeof import('@vueuse/core')['toReactive']>
     readonly toRef: UnwrapRef<typeof import('vue')['toRef']>
@@ -907,7 +838,6 @@ declare module '@vue/runtime-core' {
     readonly useNetwork: UnwrapRef<typeof import('@vueuse/core')['useNetwork']>
     readonly useNow: UnwrapRef<typeof import('@vueuse/core')['useNow']>
     readonly useObjectUrl: UnwrapRef<typeof import('@vueuse/core')['useObjectUrl']>
-    readonly useObservable: UnwrapRef<typeof import('@vueuse/rxjs')['useObservable']>
     readonly useOffsetPagination: UnwrapRef<typeof import('@vueuse/core')['useOffsetPagination']>
     readonly useOnline: UnwrapRef<typeof import('@vueuse/core')['useOnline']>
     readonly usePageLeave: UnwrapRef<typeof import('@vueuse/core')['usePageLeave']>
@@ -945,8 +875,6 @@ declare module '@vue/runtime-core' {
     readonly useStorage: UnwrapRef<typeof import('@vueuse/core')['useStorage']>
     readonly useStorageAsync: UnwrapRef<typeof import('@vueuse/core')['useStorageAsync']>
     readonly useStyleTag: UnwrapRef<typeof import('@vueuse/core')['useStyleTag']>
-    readonly useSubject: UnwrapRef<typeof import('@vueuse/rxjs')['useSubject']>
-    readonly useSubscription: UnwrapRef<typeof import('@vueuse/rxjs')['useSubscription']>
     readonly useSupported: UnwrapRef<typeof import('@vueuse/core')['useSupported']>
     readonly useSwipe: UnwrapRef<typeof import('@vueuse/core')['useSwipe']>
     readonly useTemplateRefsList: UnwrapRef<typeof import('@vueuse/core')['useTemplateRefsList']>
@@ -986,7 +914,6 @@ declare module '@vue/runtime-core' {
     readonly watchDebounced: UnwrapRef<typeof import('@vueuse/core')['watchDebounced']>
     readonly watchDeep: UnwrapRef<typeof import('@vueuse/core')['watchDeep']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
-    readonly watchExtractedObservable: UnwrapRef<typeof import('@vueuse/rxjs')['watchExtractedObservable']>
     readonly watchIgnorable: UnwrapRef<typeof import('@vueuse/core')['watchIgnorable']>
     readonly watchImmediate: UnwrapRef<typeof import('@vueuse/core')['watchImmediate']>
     readonly watchOnce: UnwrapRef<typeof import('@vueuse/core')['watchOnce']>
@@ -997,6 +924,5 @@ declare module '@vue/runtime-core' {
     readonly watchTriggerable: UnwrapRef<typeof import('@vueuse/core')['watchTriggerable']>
     readonly watchWithFilter: UnwrapRef<typeof import('@vueuse/core')['watchWithFilter']>
     readonly whenever: UnwrapRef<typeof import('@vueuse/core')['whenever']>
-    readonly zip: UnwrapRef<typeof import('rxjs')['zip']>
   }
 }

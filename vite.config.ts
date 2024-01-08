@@ -43,12 +43,10 @@ export default defineConfig(async () => ({
         'vue-i18n',
         '@vueuse/head',
         '@vueuse/core',
-        'rxjs',
         VueRouterAutoImports,
         {
           'vue-router/auto': ['useLink'],
           'destr': ['destr', 'safeDestr'],
-          '@vueuse/rxjs': ['toObserver', 'useObservable', 'useSubject', 'useSubscription', 'watchExtractedObservable', 'fromEvent'],
           '@tauri-apps/api': ['invoke'],
         },
       ],

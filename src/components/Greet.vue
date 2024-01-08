@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const { name } = defineProps<{ name: string }>()
-const fromRust = useObservable(from(invoke('greet', {
+const fromRust = computedAsync(() => invoke('greet', {
   name,
-})))
+}), 'calling...')
 </script>
 
 <template>
